@@ -6,7 +6,7 @@ RSpec.describe 'Creating a book', type: :feature do
     visit new_book_path
     fill_in 'Author', with: 'JK Rowling'
     click_on 'Create Book'
-    visit books_path
+    visit book_path(1)
     expect(page).to have_content('JK Rowling')
   end
 end
