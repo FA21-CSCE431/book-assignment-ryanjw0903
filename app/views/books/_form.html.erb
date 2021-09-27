@@ -26,6 +26,12 @@
     <%= form.number_field :price, step: :any %>
   </div>
 
+  <div class="field">
+    <p>Published Date</p>
+    <%= form.date_select("book", "published_date", use_two_digit_numbers: true,
+      start_year: 1950, order: [:day, :month, :year]) %>
+  </div>
+
   <div class="actions">
     <%= form.submit("Submit") %>
   </div>
