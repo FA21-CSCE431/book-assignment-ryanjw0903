@@ -10,7 +10,7 @@ RSpec.describe Book, type: :model do
     expect(subject).to be_valid
   end
 
-  it 'is not valid without a name' do
+  it 'is not valid without a value' do
     subject.price = 0
     expect(subject).not_to be_valid
   end
